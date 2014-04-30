@@ -17,7 +17,14 @@ $("#b17").click(function(){
  });
 $("#b15").click(function(){
 var w=$("#t1").val();
+    try
+  {
     $("#t1").val(eval(w));
+  }
+	catch(err)
+	{
+	$("#t1").val("Malfunction Operation");
+	}
 	
  }); 
  
